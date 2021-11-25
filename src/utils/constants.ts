@@ -13,7 +13,7 @@ export const BUTTONS: string[] = [
   "C",
   "+",
   "-",
-  "x",
+  "*",
   "/",
   "=",
 ];

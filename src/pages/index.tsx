@@ -6,7 +6,7 @@ import InputMode from "types/InputMode";
 let inputMode: InputMode = "continue";
 let previousValue = 0;
 let previousOperation = "";
-let isDecimaled: boolean = false;
+let isDecimaled = false;
 
 const Home: NextPage = () => {
   const [outputOperation, setOutputOperation] = useState("");

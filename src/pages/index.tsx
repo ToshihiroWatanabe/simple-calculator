@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { BUTTONS, MAX_DIGIT } from "utils/constants";
 import InputMode from "types/InputMode";
 
@@ -110,7 +110,12 @@ const Home: NextPage = () => {
   return (
     <>
       <div>
-        <input type="text" defaultValue={outputOperation} size={1}></input>
+        <input
+          type="text"
+          defaultValue={outputOperation}
+          size={1}
+          data-testid="operation"
+        ></input>
         <input
           type="text"
           defaultValue={
@@ -118,6 +123,7 @@ const Home: NextPage = () => {
           }
           size={10}
           style={{ textAlign: "right" }}
+          data-testid="value"
         ></input>
       </div>
       {BUTTONS.map((button, index) => {

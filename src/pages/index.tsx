@@ -30,6 +30,8 @@ const Home: NextPage = () => {
     }
     if (BUTTONS[code] === "=") {
       calculate();
+      inputMode = "break";
+      previousValue = 0;
     }
     if (inputMode === "continue" && code >= 0 && code <= 9) {
       if (String(outputValue).length > MAX_DIGIT) {
